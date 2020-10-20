@@ -549,3 +549,58 @@ Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
 2020-10-20 03:28:48.075714 (Thread-33): handling status request
 2020-10-20 03:28:48.076231 (Thread-33): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b38e048>]}
 2020-10-20 03:28:48.080782 (Thread-33): sending response (<Response 11345 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 03:28:55.047190 (Thread-34): Parsing macros/adapters.sql
+2020-10-20 03:28:55.077035 (Thread-34): Parsing macros/catalog.sql
+2020-10-20 03:28:55.079130 (Thread-34): Parsing macros/materializations/table.sql
+2020-10-20 03:28:55.083244 (Thread-34): Parsing macros/materializations/merge.sql
+2020-10-20 03:28:55.085357 (Thread-34): Parsing macros/materializations/view.sql
+2020-10-20 03:28:55.086900 (Thread-34): Parsing macros/materializations/incremental.sql
+2020-10-20 03:28:55.097360 (Thread-34): Parsing macros/core.sql
+2020-10-20 03:28:55.101174 (Thread-34): Parsing macros/adapters/common.sql
+2020-10-20 03:28:55.145344 (Thread-34): Parsing macros/materializations/helpers.sql
+2020-10-20 03:28:55.154630 (Thread-34): Parsing macros/materializations/table/table.sql
+2020-10-20 03:28:55.162113 (Thread-34): Parsing macros/materializations/seed/seed.sql
+2020-10-20 03:28:55.183497 (Thread-34): Parsing macros/materializations/view/view.sql
+2020-10-20 03:28:55.189932 (Thread-34): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-10-20 03:28:55.195094 (Thread-34): Parsing macros/materializations/incremental/helpers.sql
+2020-10-20 03:28:55.197036 (Thread-34): Parsing macros/materializations/incremental/incremental.sql
+2020-10-20 03:28:55.203466 (Thread-34): Parsing macros/materializations/common/merge.sql
+2020-10-20 03:28:55.217853 (Thread-34): Parsing macros/materializations/snapshot/strategies.sql
+2020-10-20 03:28:55.234883 (Thread-34): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-10-20 03:28:55.236732 (Thread-34): Parsing macros/materializations/snapshot/snapshot.sql
+2020-10-20 03:28:55.265799 (Thread-34): Parsing macros/schema_tests/relationships.sql
+2020-10-20 03:28:55.267852 (Thread-34): Parsing macros/schema_tests/not_null.sql
+2020-10-20 03:28:55.269846 (Thread-34): Parsing macros/schema_tests/unique.sql
+2020-10-20 03:28:55.271995 (Thread-34): Parsing macros/schema_tests/accepted_values.sql
+2020-10-20 03:28:55.276032 (Thread-34): Parsing macros/etc/get_custom_database.sql
+2020-10-20 03:28:55.278542 (Thread-34): Parsing macros/etc/query.sql
+2020-10-20 03:28:55.279930 (Thread-34): Parsing macros/etc/datetime.sql
+2020-10-20 03:28:55.293102 (Thread-34): Parsing macros/etc/get_custom_alias.sql
+2020-10-20 03:28:55.294685 (Thread-34): Parsing macros/etc/is_incremental.sql
+2020-10-20 03:28:55.297221 (Thread-34): Parsing macros/etc/get_custom_schema.sql
+2020-10-20 03:28:55.357176 (Thread-34): Acquiring new snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 03:28:55.376795 (Thread-34): Acquiring new snowflake connection "model.citibike.stations".
+2020-10-20 03:28:55.396887 (Thread-34): Acquiring new snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 03:28:55.410870 (Thread-35): handling status request
+2020-10-20 03:28:55.411247 (Thread-35): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b259710>]}
+2020-10-20 03:28:55.411941 (Thread-35): sending response (<Response 184 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 03:28:55.417635 (Thread-34): Acquiring new snowflake connection "model.citibike.gbfs_json".
+2020-10-20 03:28:55.438738 (Thread-34): Acquiring new snowflake connection "model.citibike.station_nhood_json".
+2020-10-20 03:28:55.460188 (Thread-34): Acquiring new snowflake connection "model.citibike.ss".
+2020-10-20 03:28:55.488327 (Thread-34): Acquiring new snowflake connection "model.citibike.weather_vw".
+2020-10-20 03:28:55.513362 (Thread-34): Acquiring new snowflake connection "model.citibike.es".
+2020-10-20 03:28:55.530428 (Thread-34): Acquiring new snowflake connection "model.citibike.station_json".
+2020-10-20 03:28:55.549750 (Thread-34): Acquiring new snowflake connection "model.citibike.region_json".
+2020-10-20 03:28:55.568028 (Thread-34): Acquiring new snowflake connection "model.citibike.nhood_json".
+2020-10-20 03:28:56.846618 (Thread-36): handling status request
+2020-10-20 03:28:56.847183 (Thread-36): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b103c4c50>]}
+2020-10-20 03:28:56.851793 (Thread-36): sending response (<Response 11385 bytes [200 OK]>) to 10.0.46.73
+2020-10-20 04:12:45.220238 (Thread-37): handling status request
+2020-10-20 04:12:45.220942 (Thread-37): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b103baa90>]}
+2020-10-20 04:12:45.225787 (Thread-37): sending response (<Response 11385 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 04:13:14.082014 (Thread-38): handling status request
+2020-10-20 04:13:14.082515 (Thread-38): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b103a4828>]}
+2020-10-20 04:13:14.087329 (Thread-38): sending response (<Response 11385 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 04:13:32.716490 (Thread-39): handling status request
+2020-10-20 04:13:32.717098 (Thread-39): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10357358>]}
+2020-10-20 04:13:32.721774 (Thread-39): sending response (<Response 11385 bytes [200 OK]>) to 10.0.8.193

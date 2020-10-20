@@ -1,7 +1,9 @@
 
 
       create or replace transient table citibike.dbt_aeldridge.gbfs_json  as
-      (--- 
+      (
+
+--- 
 --- get the source data from the GBFS web feeds
 ---
 

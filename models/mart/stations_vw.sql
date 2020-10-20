@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='view') }}
 
 --- 
 --- materialise the station records augmented with neighborhood data

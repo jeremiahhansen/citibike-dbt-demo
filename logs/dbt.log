@@ -2412,3 +2412,137 @@ Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
 2020-10-20 04:43:45.551570 (Thread-136): handling status request
 2020-10-20 04:43:45.553397 (Thread-136): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ae13da0>]}
 2020-10-20 04:43:45.558338 (Thread-136): sending response (<Response 12053 bytes [200 OK]>) to 10.0.44.214
+2020-10-20 04:43:51.132507 (MainThread): writing 1 spans (enabled:True), 54 additional messages skipped
+2020-10-20 04:43:51.132708 (MainThread): 
+      name jinja2.compile
+        id 9099930172574012904
+  trace_id 4741990327975740700
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1603169031.131836
+       end 1603169031.1323528
+  duration 0.000517s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:76f7a1a50f7440e48c3c599e8ff5d332, 54 additional messages skipped
+2020-10-20 04:43:51.157694 (MainThread): Connection 'operation.citibike.citibike-on-run-start-1' was properly closed.
+2020-10-20 04:43:51.186808 (Thread-137): Parsing macros/adapters.sql
+2020-10-20 04:43:51.216607 (Thread-137): Parsing macros/catalog.sql
+2020-10-20 04:43:51.218735 (Thread-137): Parsing macros/materializations/table.sql
+2020-10-20 04:43:51.223420 (Thread-137): Parsing macros/materializations/merge.sql
+2020-10-20 04:43:51.225572 (Thread-137): Parsing macros/materializations/view.sql
+2020-10-20 04:43:51.227154 (Thread-137): Parsing macros/materializations/incremental.sql
+2020-10-20 04:43:51.238017 (Thread-137): Parsing macros/core.sql
+2020-10-20 04:43:51.243967 (Thread-137): Parsing macros/adapters/common.sql
+2020-10-20 04:43:51.292916 (Thread-137): Parsing macros/materializations/helpers.sql
+2020-10-20 04:43:51.302352 (Thread-137): Parsing macros/materializations/table/table.sql
+2020-10-20 04:43:51.309637 (Thread-137): Parsing macros/materializations/seed/seed.sql
+2020-10-20 04:43:51.331234 (Thread-137): Parsing macros/materializations/view/view.sql
+2020-10-20 04:43:51.337774 (Thread-137): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-10-20 04:43:51.343005 (Thread-137): Parsing macros/materializations/incremental/helpers.sql
+2020-10-20 04:43:51.345262 (Thread-137): Parsing macros/materializations/incremental/incremental.sql
+2020-10-20 04:43:51.351935 (Thread-137): Parsing macros/materializations/common/merge.sql
+2020-10-20 04:43:51.366393 (Thread-137): Parsing macros/materializations/snapshot/strategies.sql
+2020-10-20 04:43:51.385558 (Thread-137): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-10-20 04:43:51.387634 (Thread-137): Parsing macros/materializations/snapshot/snapshot.sql
+2020-10-20 04:43:51.416876 (Thread-137): Parsing macros/schema_tests/relationships.sql
+2020-10-20 04:43:51.418908 (Thread-137): Parsing macros/schema_tests/not_null.sql
+2020-10-20 04:43:51.420529 (Thread-137): Parsing macros/schema_tests/unique.sql
+2020-10-20 04:43:51.422351 (Thread-137): Parsing macros/schema_tests/accepted_values.sql
+2020-10-20 04:43:51.425232 (Thread-137): Parsing macros/etc/get_custom_database.sql
+2020-10-20 04:43:51.426991 (Thread-137): Parsing macros/etc/query.sql
+2020-10-20 04:43:51.428110 (Thread-137): Parsing macros/etc/datetime.sql
+2020-10-20 04:43:51.437414 (Thread-137): Parsing macros/etc/get_custom_alias.sql
+2020-10-20 04:43:51.438423 (Thread-137): Parsing macros/etc/is_incremental.sql
+2020-10-20 04:43:51.440121 (Thread-137): Parsing macros/etc/get_custom_schema.sql
+2020-10-20 04:43:51.493432 (AgentWriter): reported 28 traces in 0.02565s
+2020-10-20 04:43:51.493672 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-10-20 04:43:51.504455 (Thread-137): Acquiring new snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:43:51.524619 (Thread-137): Acquiring new snowflake connection "model.citibike.stations".
+2020-10-20 04:43:51.545460 (Thread-137): Acquiring new snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:43:51.563906 (Thread-137): Acquiring new snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:43:51.581257 (Thread-137): Acquiring new snowflake connection "model.citibike.station_nhood_json".
+2020-10-20 04:43:51.599945 (Thread-137): Acquiring new snowflake connection "model.citibike.ss".
+2020-10-20 04:43:51.618258 (Thread-137): Acquiring new snowflake connection "model.citibike.weather_vw".
+2020-10-20 04:43:51.628552 (Thread-138): handling status request
+2020-10-20 04:43:51.628971 (Thread-138): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10368eb8>]}
+2020-10-20 04:43:51.629689 (Thread-138): sending response (<Response 184 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 04:43:51.635680 (Thread-137): Acquiring new snowflake connection "model.citibike.es".
+2020-10-20 04:43:51.654466 (Thread-137): Acquiring new snowflake connection "model.citibike.station_json".
+2020-10-20 04:43:51.672530 (Thread-137): Acquiring new snowflake connection "model.citibike.region_json".
+2020-10-20 04:43:51.690836 (Thread-137): Acquiring new snowflake connection "model.citibike.nhood_json".
+2020-10-20 04:43:51.709197 (Thread-137): Acquiring new snowflake connection "operation.citibike.citibike-on-run-start-0".
+2020-10-20 04:43:51.719376 (Thread-137): Acquiring new snowflake connection "operation.citibike.citibike-on-run-start-1".
+2020-10-20 04:43:53.072943 (Thread-139): handling status request
+2020-10-20 04:43:53.073490 (Thread-139): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10651e80>]}
+2020-10-20 04:43:53.078312 (Thread-139): sending response (<Response 12053 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 04:48:26.222047 (MainThread): writing 1 spans (enabled:True), 54 additional messages skipped
+2020-10-20 04:48:26.223623 (MainThread): 
+      name jinja2.compile
+        id 13150078978698133451
+  trace_id 16367550988827853909
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1603169306.2213771
+       end 1603169306.221894
+  duration 0.000517s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:76f7a1a50f7440e48c3c599e8ff5d332, 54 additional messages skipped
+2020-10-20 04:48:26.246992 (MainThread): Connection 'operation.citibike.citibike-on-run-start-1' was properly closed.
+2020-10-20 04:48:26.283235 (Thread-140): For key citibike, hash mismatch (FileHash(name='sha256', checksum='3e62e3403fff0d1cb3e96b807ff58cac7b6934040dc319db41c39d5690bb3c84') -> FileHash(name='sha256', checksum='95654aea70129efe597d869e1e974204c91c29f3391e82c17bf108c1456aa801')), cache invalidated
+2020-10-20 04:48:26.283937 (Thread-140): Parsing macros/adapters.sql
+2020-10-20 04:48:26.313974 (Thread-140): Parsing macros/catalog.sql
+2020-10-20 04:48:26.316015 (Thread-140): Parsing macros/materializations/table.sql
+2020-10-20 04:48:26.320079 (Thread-140): Parsing macros/materializations/merge.sql
+2020-10-20 04:48:26.322182 (Thread-140): Parsing macros/materializations/view.sql
+2020-10-20 04:48:26.323721 (Thread-140): Parsing macros/materializations/incremental.sql
+2020-10-20 04:48:26.334076 (Thread-140): Parsing macros/core.sql
+2020-10-20 04:48:26.337901 (Thread-140): Parsing macros/adapters/common.sql
+2020-10-20 04:48:26.382438 (Thread-140): Parsing macros/materializations/helpers.sql
+2020-10-20 04:48:26.391816 (Thread-140): Parsing macros/materializations/table/table.sql
+2020-10-20 04:48:26.398980 (Thread-140): Parsing macros/materializations/seed/seed.sql
+2020-10-20 04:48:26.420622 (Thread-140): Parsing macros/materializations/view/view.sql
+2020-10-20 04:48:26.427109 (Thread-140): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-10-20 04:48:26.432304 (Thread-140): Parsing macros/materializations/incremental/helpers.sql
+2020-10-20 04:48:26.434279 (Thread-140): Parsing macros/materializations/incremental/incremental.sql
+2020-10-20 04:48:26.440750 (Thread-140): Parsing macros/materializations/common/merge.sql
+2020-10-20 04:48:26.455352 (Thread-140): Parsing macros/materializations/snapshot/strategies.sql
+2020-10-20 04:48:26.472533 (Thread-140): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-10-20 04:48:26.474423 (Thread-140): Parsing macros/materializations/snapshot/snapshot.sql
+2020-10-20 04:48:26.503627 (Thread-140): Parsing macros/schema_tests/relationships.sql
+2020-10-20 04:48:26.505685 (Thread-140): Parsing macros/schema_tests/not_null.sql
+2020-10-20 04:48:26.507306 (Thread-140): Parsing macros/schema_tests/unique.sql
+2020-10-20 04:48:26.509144 (Thread-140): Parsing macros/schema_tests/accepted_values.sql
+2020-10-20 04:48:26.511951 (Thread-140): Parsing macros/etc/get_custom_database.sql
+2020-10-20 04:48:26.513764 (Thread-140): Parsing macros/etc/query.sql
+2020-10-20 04:48:26.514899 (Thread-140): Parsing macros/etc/datetime.sql
+2020-10-20 04:48:26.524275 (Thread-140): Parsing macros/etc/get_custom_alias.sql
+2020-10-20 04:48:26.525323 (Thread-140): Parsing macros/etc/is_incremental.sql
+2020-10-20 04:48:26.527655 (Thread-140): Parsing macros/etc/get_custom_schema.sql
+2020-10-20 04:48:26.537796 (AgentWriter): reported 28 traces in 0.00222s, 1 additional messages skipped
+2020-10-20 04:48:26.537970 (AgentWriter): initialized RateSampler, sample 100% of traces, 63 additional messages skipped
+2020-10-20 04:48:26.544542 (Thread-140): For key citibike, hash mismatch (FileHash(name='sha256', checksum='3e62e3403fff0d1cb3e96b807ff58cac7b6934040dc319db41c39d5690bb3c84') -> FileHash(name='sha256', checksum='95654aea70129efe597d869e1e974204c91c29f3391e82c17bf108c1456aa801')), cache invalidated
+2020-10-20 04:48:26.588112 (Thread-140): Acquiring new snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:48:26.608282 (Thread-140): Acquiring new snowflake connection "model.citibike.stations".
+2020-10-20 04:48:26.628486 (Thread-140): Acquiring new snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:48:26.646820 (Thread-140): Acquiring new snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:48:26.662969 (Thread-140): Acquiring new snowflake connection "model.citibike.station_nhood_json".
+2020-10-20 04:48:26.683164 (Thread-140): Acquiring new snowflake connection "model.citibike.ss".
+2020-10-20 04:48:26.700108 (Thread-140): Acquiring new snowflake connection "model.citibike.weather_vw".
+2020-10-20 04:48:26.717427 (Thread-140): Acquiring new snowflake connection "model.citibike.es".
+2020-10-20 04:48:26.734546 (Thread-140): Acquiring new snowflake connection "model.citibike.station_json".
+2020-10-20 04:48:26.752699 (Thread-140): Acquiring new snowflake connection "model.citibike.region_json".
+2020-10-20 04:48:26.771812 (Thread-140): Acquiring new snowflake connection "model.citibike.nhood_json".
+2020-10-20 04:48:27.190421 (Thread-141): handling status request
+2020-10-20 04:48:27.190938 (Thread-141): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b103abdd8>]}
+2020-10-20 04:48:27.195741 (Thread-141): sending response (<Response 12403 bytes [200 OK]>) to 10.0.1.193
+2020-10-20 04:48:33.410505 (Thread-142): handling status request
+2020-10-20 04:48:33.411072 (Thread-142): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abf4a58>]}
+2020-10-20 04:48:33.415845 (Thread-142): sending response (<Response 12403 bytes [200 OK]>) to 10.0.8.193

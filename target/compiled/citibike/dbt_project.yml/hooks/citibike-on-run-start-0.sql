@@ -1,0 +1,1 @@
+drop schema citibike.dbt_aeldridge

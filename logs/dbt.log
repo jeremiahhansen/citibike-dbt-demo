@@ -604,3 +604,582 @@ Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
 2020-10-20 04:13:32.716490 (Thread-39): handling status request
 2020-10-20 04:13:32.717098 (Thread-39): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10357358>]}
 2020-10-20 04:13:32.721774 (Thread-39): sending response (<Response 11385 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 04:13:38.810869 (MainThread): writing 1 spans (enabled:True), 51 additional messages skipped
+2020-10-20 04:13:38.811092 (MainThread): 
+      name jinja2.compile
+        id 8153983912707454919
+  trace_id 1754251117828123916
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1603167218.8101912
+       end 1603167218.810712
+  duration 0.000521s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:76f7a1a50f7440e48c3c599e8ff5d332, 51 additional messages skipped
+2020-10-20 04:13:38.833826 (MainThread): Connection 'model.citibike.nhood_json' was properly closed.
+2020-10-20 04:13:38.858671 (AgentWriter): reported 24 traces in 0.01496s, 2 additional messages skipped
+2020-10-20 04:13:38.858876 (AgentWriter): initialized RateSampler, sample 100% of traces, 95 additional messages skipped
+2020-10-20 04:13:38.865425 (Thread-40): Parsing macros/adapters.sql
+2020-10-20 04:13:38.895268 (Thread-40): Parsing macros/catalog.sql
+2020-10-20 04:13:38.897336 (Thread-40): Parsing macros/materializations/table.sql
+2020-10-20 04:13:38.901396 (Thread-40): Parsing macros/materializations/merge.sql
+2020-10-20 04:13:38.903488 (Thread-40): Parsing macros/materializations/view.sql
+2020-10-20 04:13:38.905087 (Thread-40): Parsing macros/materializations/incremental.sql
+2020-10-20 04:13:38.922920 (Thread-40): Parsing macros/core.sql
+2020-10-20 04:13:38.929609 (Thread-40): Parsing macros/adapters/common.sql
+2020-10-20 04:13:38.987104 (Thread-40): Parsing macros/materializations/helpers.sql
+2020-10-20 04:13:38.996467 (Thread-40): Parsing macros/materializations/table/table.sql
+2020-10-20 04:13:39.003874 (Thread-40): Parsing macros/materializations/seed/seed.sql
+2020-10-20 04:13:39.031347 (Thread-40): Parsing macros/materializations/view/view.sql
+2020-10-20 04:13:39.040044 (Thread-40): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-10-20 04:13:39.046878 (Thread-40): Parsing macros/materializations/incremental/helpers.sql
+2020-10-20 04:13:39.049281 (Thread-40): Parsing macros/materializations/incremental/incremental.sql
+2020-10-20 04:13:39.055724 (Thread-40): Parsing macros/materializations/common/merge.sql
+2020-10-20 04:13:39.070203 (Thread-40): Parsing macros/materializations/snapshot/strategies.sql
+2020-10-20 04:13:39.087572 (Thread-40): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-10-20 04:13:39.089458 (Thread-40): Parsing macros/materializations/snapshot/snapshot.sql
+2020-10-20 04:13:39.118723 (Thread-40): Parsing macros/schema_tests/relationships.sql
+2020-10-20 04:13:39.120751 (Thread-40): Parsing macros/schema_tests/not_null.sql
+2020-10-20 04:13:39.122420 (Thread-40): Parsing macros/schema_tests/unique.sql
+2020-10-20 04:13:39.124233 (Thread-40): Parsing macros/schema_tests/accepted_values.sql
+2020-10-20 04:13:39.127101 (Thread-40): Parsing macros/etc/get_custom_database.sql
+2020-10-20 04:13:39.128865 (Thread-40): Parsing macros/etc/query.sql
+2020-10-20 04:13:39.130003 (Thread-40): Parsing macros/etc/datetime.sql
+2020-10-20 04:13:39.139340 (Thread-40): Parsing macros/etc/get_custom_alias.sql
+2020-10-20 04:13:39.140376 (Thread-40): Parsing macros/etc/is_incremental.sql
+2020-10-20 04:13:39.142117 (Thread-40): Parsing macros/etc/get_custom_schema.sql
+2020-10-20 04:13:39.191731 (Thread-40): Acquiring new snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:13:39.212226 (Thread-40): Acquiring new snowflake connection "model.citibike.stations".
+2020-10-20 04:13:39.232878 (Thread-40): Acquiring new snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:13:39.252245 (Thread-40): Acquiring new snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:13:39.268970 (Thread-40): Acquiring new snowflake connection "model.citibike.station_nhood_json".
+2020-10-20 04:13:39.280720 (Thread-41): handling status request
+2020-10-20 04:13:39.281169 (Thread-41): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10519898>]}
+2020-10-20 04:13:39.281916 (Thread-41): sending response (<Response 184 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 04:13:39.288755 (Thread-40): Acquiring new snowflake connection "model.citibike.ss".
+2020-10-20 04:13:39.308424 (Thread-40): Acquiring new snowflake connection "model.citibike.weather_vw".
+2020-10-20 04:13:39.326594 (Thread-40): Acquiring new snowflake connection "model.citibike.es".
+2020-10-20 04:13:39.344508 (Thread-40): Acquiring new snowflake connection "model.citibike.station_json".
+2020-10-20 04:13:39.363208 (Thread-40): Acquiring new snowflake connection "model.citibike.region_json".
+2020-10-20 04:13:39.382221 (Thread-40): Acquiring new snowflake connection "model.citibike.nhood_json".
+2020-10-20 04:13:40.683302 (Thread-42): handling status request
+2020-10-20 04:13:40.683858 (Thread-42): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b1062e160>]}
+2020-10-20 04:13:40.688502 (Thread-42): sending response (<Response 11385 bytes [200 OK]>) to 10.0.29.170
+2020-10-20 04:14:01.443198 (Thread-43): handling status request
+2020-10-20 04:14:01.443694 (Thread-43): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b106259b0>]}
+2020-10-20 04:14:01.448232 (Thread-43): sending response (<Response 11385 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 04:14:01.491537 (Thread-44): handling status request
+2020-10-20 04:14:01.492082 (Thread-44): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b3208d0>]}
+2020-10-20 04:14:01.499062 (Thread-44): sending response (<Response 11385 bytes [200 OK]>) to 10.0.46.73
+2020-10-20 04:14:01.911769 (Thread-45): handling cli_args request
+2020-10-20 04:14:01.912339 (Thread-45): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b325d68>]}
+2020-10-20 04:14:01.921389 (Thread-45): Connection 'model.citibike.nhood_json' was properly closed.
+2020-10-20 04:14:03.026204 (Thread-45): sending response (<Response 137 bytes [200 OK]>) to 10.0.22.169
+2020-10-20 04:14:03.093279 (MainThread): Partial parsing not enabled
+2020-10-20 04:14:03.094655 (MainThread): Parsing macros/adapters.sql
+2020-10-20 04:14:03.127121 (MainThread): Parsing macros/catalog.sql
+2020-10-20 04:14:03.129327 (MainThread): Parsing macros/materializations/table.sql
+2020-10-20 04:14:03.133358 (MainThread): Parsing macros/materializations/merge.sql
+2020-10-20 04:14:03.135448 (MainThread): Parsing macros/materializations/view.sql
+2020-10-20 04:14:03.137021 (MainThread): Parsing macros/materializations/incremental.sql
+2020-10-20 04:14:03.148738 (MainThread): Parsing macros/core.sql
+2020-10-20 04:14:03.153834 (MainThread): Parsing macros/adapters/common.sql
+2020-10-20 04:14:03.201743 (MainThread): Parsing macros/materializations/helpers.sql
+2020-10-20 04:14:03.211232 (MainThread): Parsing macros/materializations/table/table.sql
+2020-10-20 04:14:03.218380 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-10-20 04:14:03.239975 (MainThread): Parsing macros/materializations/view/view.sql
+2020-10-20 04:14:03.246573 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-10-20 04:14:03.252050 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-10-20 04:14:03.254119 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-10-20 04:14:03.260498 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-10-20 04:14:03.275169 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-10-20 04:14:03.292695 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-10-20 04:14:03.294678 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-10-20 04:14:03.324214 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-10-20 04:14:03.326366 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-10-20 04:14:03.328097 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-10-20 04:14:03.330033 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-10-20 04:14:03.332904 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-10-20 04:14:03.334773 (MainThread): Parsing macros/etc/query.sql
+2020-10-20 04:14:03.335977 (MainThread): Parsing macros/etc/datetime.sql
+2020-10-20 04:14:03.345212 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-10-20 04:14:03.346364 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-10-20 04:14:03.348170 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-10-20 04:14:03.359114 (MainThread): Partial parsing not enabled
+2020-10-20 04:14:03.409373 (MainThread): Acquiring new snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:14:03.439504 (MainThread): Acquiring new snowflake connection "model.citibike.stations".
+2020-10-20 04:14:03.454398 (Thread-46): handling poll request
+2020-10-20 04:14:03.455022 (Thread-46): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b2bc080>]}
+2020-10-20 04:14:03.462305 (Thread-46): sending response (<Response 9399 bytes [200 OK]>) to 10.0.44.214
+2020-10-20 04:14:03.460025 (MainThread): Acquiring new snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:14:03.479632 (MainThread): Acquiring new snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:14:03.496709 (MainThread): Acquiring new snowflake connection "model.citibike.station_nhood_json".
+2020-10-20 04:14:03.514784 (MainThread): Acquiring new snowflake connection "model.citibike.ss".
+2020-10-20 04:14:03.536393 (MainThread): Acquiring new snowflake connection "model.citibike.weather_vw".
+2020-10-20 04:14:03.558545 (MainThread): Acquiring new snowflake connection "model.citibike.es".
+2020-10-20 04:14:03.576561 (MainThread): Acquiring new snowflake connection "model.citibike.station_json".
+2020-10-20 04:14:03.594592 (MainThread): Acquiring new snowflake connection "model.citibike.region_json".
+2020-10-20 04:14:03.612797 (MainThread): Acquiring new snowflake connection "model.citibike.nhood_json".
+2020-10-20 04:14:03.921663 (MainThread): Found 11 models, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 2 sources
+2020-10-20 04:14:03.923762 (MainThread): 
+2020-10-20 04:14:03.924267 (MainThread): Acquiring new snowflake connection "master".
+2020-10-20 04:14:03.933968 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_citibike".
+2020-10-20 04:14:03.947673 (ThreadPoolExecutor-0_0): Using snowflake connection "list_citibike".
+2020-10-20 04:14:03.947772 (ThreadPoolExecutor-0_0): On list_citibike: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "connection_name": "list_citibike"} */
+
+    show terse schemas in database citibike
+    limit 10000
+2020-10-20 04:14:03.947834 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-10-20 04:14:04.829299 (ThreadPoolExecutor-0_0): unclosed file <_io.BufferedReader name='/usr/local/lib/python3.6/dist-packages/certifi/cacert.pem'>
+2020-10-20 04:14:04.895456 (Thread-47): handling poll request
+2020-10-20 04:14:04.896033 (Thread-47): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b1060ed68>]}
+2020-10-20 04:14:04.898691 (Thread-47): sending response (<Response 5203 bytes [200 OK]>) to 10.0.20.192
+2020-10-20 04:14:06.428164 (Thread-48): handling poll request
+2020-10-20 04:14:06.428669 (Thread-48): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104ae630>]}
+2020-10-20 04:14:06.429777 (Thread-48): sending response (<Response 285 bytes [200 OK]>) to 10.0.38.178
+2020-10-20 04:14:06.761419 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 5 in 2.81 seconds
+2020-10-20 04:14:06.765329 (ThreadPoolExecutor-0_0): On list_citibike: Close
+2020-10-20 04:14:07.276037 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_citibike_dbt_aeldridge".
+2020-10-20 04:14:07.283699 (ThreadPoolExecutor-1_0): Using snowflake connection "list_citibike_dbt_aeldridge".
+2020-10-20 04:14:07.283796 (ThreadPoolExecutor-1_0): On list_citibike_dbt_aeldridge: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "connection_name": "list_citibike_dbt_aeldridge"} */
+
+    show terse objects in citibike.dbt_aeldridge
+2020-10-20 04:14:07.283858 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2020-10-20 04:14:07.866405 (Thread-49): handling poll request
+2020-10-20 04:14:07.866899 (Thread-49): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104ae2b0>]}
+2020-10-20 04:14:07.868484 (Thread-49): sending response (<Response 2245 bytes [200 OK]>) to 10.0.47.166
+2020-10-20 04:14:09.106017 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 4 in 1.82 seconds
+2020-10-20 04:14:09.110327 (ThreadPoolExecutor-1_0): On list_citibike_dbt_aeldridge: Close
+2020-10-20 04:14:09.440408 (Thread-50): handling poll request
+2020-10-20 04:14:09.440897 (Thread-50): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b28d940>]}
+2020-10-20 04:14:09.442143 (Thread-50): sending response (<Response 849 bytes [200 OK]>) to 10.0.20.192
+2020-10-20 04:14:09.628750 (MainThread): Using snowflake connection "master".
+2020-10-20 04:14:09.628878 (MainThread): On master: BEGIN
+2020-10-20 04:14:09.628940 (MainThread): Opening a new connection, currently in state init
+2020-10-20 04:14:10.889543 (Thread-51): handling poll request
+2020-10-20 04:14:10.890021 (Thread-51): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b28da20>]}
+2020-10-20 04:14:10.891303 (Thread-51): sending response (<Response 1088 bytes [200 OK]>) to 10.0.38.178
+2020-10-20 04:14:11.005180 (MainThread): SQL status: SUCCESS 1 in 1.38 seconds
+2020-10-20 04:14:11.005342 (MainThread): On master: COMMIT
+2020-10-20 04:14:11.005439 (MainThread): Using snowflake connection "master".
+2020-10-20 04:14:11.005491 (MainThread): On master: COMMIT
+2020-10-20 04:14:11.528702 (MainThread): SQL status: SUCCESS 1 in 0.52 seconds
+2020-10-20 04:14:11.528874 (MainThread): On master: Close
+2020-10-20 04:14:12.047841 (MainThread): 04:14:12 | Concurrency: 1 threads (target='default')
+2020-10-20 04:14:12.047993 (MainThread): 04:14:12 | 
+2020-10-20 04:14:12.049287 (Thread-1): Began running node model.citibike.gbfs_json
+2020-10-20 04:14:12.050627 (Thread-1): 04:14:12 | 1 of 4 START table model dbt_aeldridge.gbfs_json..................... [RUN]
+2020-10-20 04:14:12.050934 (Thread-1): Acquiring new snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:14:12.051050 (Thread-1): Compiling model.citibike.gbfs_json
+2020-10-20 04:14:12.066936 (Thread-1): Writing injected SQL for node "model.citibike.gbfs_json"
+2020-10-20 04:14:12.087935 (Thread-1): finished collecting timing info
+2020-10-20 04:14:12.117627 (Thread-1): Writing runtime SQL for node "model.citibike.gbfs_json"
+2020-10-20 04:14:12.137966 (Thread-1): Using snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:14:12.138070 (Thread-1): On model.citibike.gbfs_json: BEGIN
+2020-10-20 04:14:12.138133 (Thread-1): Opening a new connection, currently in state closed
+2020-10-20 04:14:12.306744 (Thread-52): handling poll request
+2020-10-20 04:14:12.307256 (Thread-52): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b28dfd0>]}
+2020-10-20 04:14:12.310259 (Thread-52): sending response (<Response 6093 bytes [200 OK]>) to 10.0.5.27
+2020-10-20 04:14:13.727135 (Thread-53): handling poll request
+2020-10-20 04:14:13.727637 (Thread-53): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b28ddd8>]}
+2020-10-20 04:14:13.728647 (Thread-53): sending response (<Response 286 bytes [200 OK]>) to 10.0.22.169
+2020-10-20 04:14:13.776841 (Thread-1): SQL status: SUCCESS 1 in 1.64 seconds
+2020-10-20 04:14:13.777023 (Thread-1): Using snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:14:13.777085 (Thread-1): On model.citibike.gbfs_json: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.citibike.gbfs_json"} */
+
+
+      create or replace transient table citibike.dbt_aeldridge.gbfs_json  as
+      (
+
+--- 
+--- get the source data from the GBFS web feeds
+---
+
+select $1 data,
+    $2 url, citibike.utils.fetch_http_data($2) payload,
+    current_timestamp() row_inserted
+from (values
+    ('regions', 'https://gbfs.citibikenyc.com/gbfs/en/system_regions.json'),
+    ('stations', 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json'),
+    ('neighborhoods', 'https://snowflake-demo-stuff.s3.amazonaws.com/neighborhoods.geojson'))
+      );
+2020-10-20 04:14:15.138120 (Thread-54): handling poll request
+2020-10-20 04:14:15.138617 (Thread-54): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b28d828>]}
+2020-10-20 04:14:15.139934 (Thread-54): sending response (<Response 1924 bytes [200 OK]>) to 10.0.24.16
+2020-10-20 04:14:16.657965 (Thread-55): handling poll request
+2020-10-20 04:14:16.658464 (Thread-55): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104ae6a0>]}
+2020-10-20 04:14:16.659442 (Thread-55): sending response (<Response 286 bytes [200 OK]>) to 10.0.5.27
+2020-10-20 04:14:18.311780 (Thread-56): handling poll request
+2020-10-20 04:14:18.312293 (Thread-56): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104ae6a0>]}
+2020-10-20 04:14:18.313325 (Thread-56): sending response (<Response 286 bytes [200 OK]>) to 10.0.29.170
+2020-10-20 04:14:19.780815 (Thread-57): handling poll request
+2020-10-20 04:14:19.781531 (Thread-57): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b30f358>]}
+2020-10-20 04:14:19.782903 (Thread-57): sending response (<Response 286 bytes [200 OK]>) to 10.0.22.169
+2020-10-20 04:14:21.189851 (Thread-58): handling poll request
+2020-10-20 04:14:21.190369 (Thread-58): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b28b7f0>]}
+2020-10-20 04:14:21.191396 (Thread-58): sending response (<Response 286 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 04:14:22.624003 (Thread-59): handling poll request
+2020-10-20 04:14:22.624503 (Thread-59): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b103e3390>]}
+2020-10-20 04:14:22.625566 (Thread-59): sending response (<Response 286 bytes [200 OK]>) to 10.0.33.145
+2020-10-20 04:14:24.110316 (Thread-60): handling poll request
+2020-10-20 04:14:24.110822 (Thread-60): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104ba080>]}
+2020-10-20 04:14:24.111817 (Thread-60): sending response (<Response 286 bytes [200 OK]>) to 10.0.1.86
+2020-10-20 04:14:25.525706 (Thread-61): handling poll request
+2020-10-20 04:14:25.526237 (Thread-61): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104ba198>]}
+2020-10-20 04:14:25.527271 (Thread-61): sending response (<Response 286 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 04:14:26.043223 (Thread-1): SQL status: SUCCESS 1 in 12.27 seconds
+2020-10-20 04:14:26.044472 (Thread-1): On model.citibike.gbfs_json: COMMIT
+2020-10-20 04:14:26.044603 (Thread-1): Using snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:14:26.044656 (Thread-1): On model.citibike.gbfs_json: COMMIT
+2020-10-20 04:14:26.309112 (Thread-1): SQL status: SUCCESS 1 in 0.26 seconds
+2020-10-20 04:14:26.321067 (Thread-1): finished collecting timing info
+2020-10-20 04:14:26.321352 (Thread-1): On model.citibike.gbfs_json: Close
+2020-10-20 04:14:26.887855 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '59596c09-4fb0-4780-bc53-4425dfc4939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc67bfa20>]}
+2020-10-20 04:14:26.889186 (Thread-1): 04:14:26 | 1 of 4 OK created table model dbt_aeldridge.gbfs_json................ [SUCCESS 1 in 14.84s]
+2020-10-20 04:14:26.889303 (Thread-1): Finished running node model.citibike.gbfs_json
+2020-10-20 04:14:26.889436 (Thread-1): Began running node model.citibike.weather_vw
+2020-10-20 04:14:26.889696 (Thread-1): Acquiring new snowflake connection "model.citibike.weather_vw".
+2020-10-20 04:14:26.889783 (Thread-1): Compiling model.citibike.weather_vw
+2020-10-20 04:14:26.898965 (Thread-1): Writing injected SQL for node "model.citibike.weather_vw"
+2020-10-20 04:14:26.919477 (Thread-1): finished collecting timing info
+2020-10-20 04:14:26.929240 (Thread-62): handling poll request
+2020-10-20 04:14:26.929643 (Thread-62): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104ba518>]}
+2020-10-20 04:14:26.931532 (Thread-62): Checking header 'user-agent' tracing in whitelist set(), 24 additional messages skipped
+2020-10-20 04:14:26.919910 (Thread-1): Finished running node model.citibike.weather_vw
+2020-10-20 04:14:26.920026 (Thread-1): Began running node model.citibike.nhood_json
+2020-10-20 04:14:26.920230 (Thread-1): Acquiring new snowflake connection "model.citibike.nhood_json".
+2020-10-20 04:14:26.920304 (Thread-1): Compiling model.citibike.nhood_json
+2020-10-20 04:14:26.930375 (Thread-1): Writing injected SQL for node "model.citibike.nhood_json"
+2020-10-20 04:14:26.948694 (Thread-1): finished collecting timing info
+2020-10-20 04:14:26.949138 (Thread-1): Finished running node model.citibike.nhood_json
+2020-10-20 04:14:26.949253 (Thread-1): Began running node model.citibike.region_json
+2020-10-20 04:14:26.949455 (Thread-1): Acquiring new snowflake connection "model.citibike.region_json".
+2020-10-20 04:14:26.949526 (Thread-1): Compiling model.citibike.region_json
+2020-10-20 04:14:26.958332 (Thread-1): Writing injected SQL for node "model.citibike.region_json"
+2020-10-20 04:14:26.975888 (Thread-1): finished collecting timing info
+2020-10-20 04:14:26.976307 (Thread-1): Finished running node model.citibike.region_json
+2020-10-20 04:14:26.976420 (Thread-1): Began running node model.citibike.station_json
+2020-10-20 04:14:26.976620 (Thread-1): Acquiring new snowflake connection "model.citibike.station_json".
+2020-10-20 04:14:26.976692 (Thread-1): Compiling model.citibike.station_json
+2020-10-20 04:14:26.985640 (Thread-1): Writing injected SQL for node "model.citibike.station_json"
+2020-10-20 04:14:27.004791 (Thread-1): finished collecting timing info
+2020-10-20 04:14:27.005286 (Thread-1): Finished running node model.citibike.station_json
+2020-10-20 04:14:27.005838 (Thread-1): Began running node model.citibike.station_nhood_json
+2020-10-20 04:14:27.006153 (Thread-1): Acquiring new snowflake connection "model.citibike.station_nhood_json".
+2020-10-20 04:14:27.006238 (Thread-1): Compiling model.citibike.station_nhood_json
+2020-10-20 04:14:27.018770 (Thread-1): Writing injected SQL for node "model.citibike.station_nhood_json"
+2020-10-20 04:14:27.037929 (Thread-1): finished collecting timing info
+2020-10-20 04:14:27.038398 (Thread-1): Finished running node model.citibike.station_nhood_json
+2020-10-20 04:14:27.038915 (Thread-1): Began running node model.citibike.stations
+2020-10-20 04:14:27.039927 (Thread-1): 04:14:27 | 2 of 4 START view model dbt_aeldridge.stations....................... [RUN]
+2020-10-20 04:14:27.040161 (Thread-1): Acquiring new snowflake connection "model.citibike.stations".
+2020-10-20 04:14:27.055444 (Thread-62): writing 1 spans (enabled:True), 52 additional messages skipped
+2020-10-20 04:14:27.055637 (Thread-62): 
+      name requests.request
+        id 2874016236945127061
+  trace_id 12520675655126801920
+ parent_id None
+   service requests
+  resource requests.request
+      type http
+     start 1603167266.93106
+       end 1603167267.0553432
+  duration 0.124283s
+     error 0
+      tags 
+           http.method:POST
+           http.status_code:200
+           http.url:https://fishtownanalytics.sinter-collect.com/com.snowplowanalytics.snowplow/tp2
+           runtime-id:76f7a1a50f7440e48c3c599e8ff5d332, 52 additional messages skipped
+2020-10-20 04:14:27.040237 (Thread-1): Compiling model.citibike.stations
+2020-10-20 04:14:27.062079 (Thread-62): sending response (<Response 18226 bytes [200 OK]>) to 10.0.20.192
+2020-10-20 04:14:27.058943 (Thread-1): Writing injected SQL for node "model.citibike.stations"
+2020-10-20 04:14:27.079916 (Thread-1): finished collecting timing info
+2020-10-20 04:14:27.104073 (Thread-1): Using snowflake connection "model.citibike.stations".
+2020-10-20 04:14:27.104169 (Thread-1): On model.citibike.stations: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.citibike.stations"} */
+drop table if exists "CITIBIKE"."DBT_AELDRIDGE"."STATIONS" cascade
+2020-10-20 04:14:27.104230 (Thread-1): Opening a new connection, currently in state closed
+2020-10-20 04:14:28.014700 (AgentWriter): reported 1 traces in 0.01804s, 1 additional messages skipped
+2020-10-20 04:14:28.014947 (AgentWriter): initialized RateSampler, sample 100% of traces, 63 additional messages skipped
+2020-10-20 04:14:28.485718 (Thread-63): handling poll request
+2020-10-20 04:14:28.486400 (Thread-63): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10398e10>]}
+2020-10-20 04:14:28.488523 (Thread-63): sending response (<Response 2235 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 04:14:28.917540 (Thread-1): SQL status: SUCCESS 1 in 1.81 seconds
+2020-10-20 04:14:28.924105 (Thread-1): Writing runtime SQL for node "model.citibike.stations"
+2020-10-20 04:14:28.945574 (Thread-1): Using snowflake connection "model.citibike.stations".
+2020-10-20 04:14:28.945678 (Thread-1): On model.citibike.stations: BEGIN
+2020-10-20 04:14:29.405386 (Thread-1): SQL status: SUCCESS 1 in 0.46 seconds
+2020-10-20 04:14:29.405527 (Thread-1): Using snowflake connection "model.citibike.stations".
+2020-10-20 04:14:29.405582 (Thread-1): On model.citibike.stations: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.citibike.stations"} */
+
+  create or replace  view citibike.dbt_aeldridge.stations  as (
+    
+
+--- 
+--- materialise the station records augmented with neighborhood data
+---
+
+with  __dbt__CTE__station_json as (
+
+
+--
+-- get the station data in JSON format
+--
+
+with s as (
+    select payload, row_inserted from citibike.dbt_aeldridge.gbfs_json
+      where data = 'stations'
+      and row_inserted = (select max(row_inserted) from citibike.dbt_aeldridge.gbfs_json))
+select value station_v,
+         payload:response.last_updated::timestamp last_updated,
+         row_inserted
+from s, lateral flatten (input => payload:response.data.stations)
+),  __dbt__CTE__nhood_json as (
+
+
+--
+-- get the neighborhood data in JSON format
+--
+
+with n as (
+    select payload, row_inserted from citibike.dbt_aeldridge.gbfs_json
+      where data = 'neighborhoods'
+      and row_inserted = (select max(row_inserted) from citibike.dbt_aeldridge.gbfs_json))
+select value neighborhood_v,
+    to_geography(value:geometry) geo,
+    value:properties.borough::string borough,
+    value:properties.neighborhood::string neighborhood
+from n, lateral flatten (input => payload:response.features)
+),  __dbt__CTE__station_nhood_json as (
+
+
+---
+--- augment the station records with the neighborhood they are in
+---
+
+select station_v,
+    last_updated,
+    row_inserted,
+    st_point(station_v:lon::float, station_v:lat::float) station_geo,
+    borough borough_name,
+    neighborhood neighborhood_name
+from __dbt__CTE__station_json inner join __dbt__CTE__nhood_json
+where st_within(station_geo, geo)
+),  __dbt__CTE__region_json as (
+
+
+--
+-- get the region data in JSON format
+--
+
+with r as (
+  select payload, row_inserted from citibike.dbt_aeldridge.gbfs_json
+      where data = 'regions'
+      and row_inserted = (select max(row_inserted) from citibike.dbt_aeldridge.gbfs_json))
+select value region_v,
+         payload:response.last_updated::timestamp last_updated,
+         row_inserted
+from r, lateral flatten (input => payload:response.data.regions)
+),s as (
+    select * from __dbt__CTE__station_nhood_json
+      where row_inserted = (select max(row_inserted) from __dbt__CTE__station_json)),
+r as (
+    select * from __dbt__CTE__region_json
+      where row_inserted = (select max(row_inserted) from __dbt__CTE__region_json))
+select station_v:station_id::number station_id,
+    station_v:name::string station_name,
+    station_v:lat::float station_lat,
+    station_v:lon::float station_lon,
+    station_geo,
+    station_v:station_type::string station_type,
+    station_v:capacity::number station_capacity,
+    station_v:rental_methods rental_methods,
+    region_v:name::string region_name,
+    borough_name, neighborhood_name
+from s left outer join r
+    on station_v:region_id::integer = region_v:region_id::integer
+  );
+2020-10-20 04:14:29.969387 (Thread-64): handling poll request
+2020-10-20 04:14:29.970087 (Thread-64): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10398128>]}
+2020-10-20 04:14:29.972854 (Thread-64): sending response (<Response 5488 bytes [200 OK]>) to 10.0.33.145
+2020-10-20 04:14:29.990897 (Thread-1): SQL status: SUCCESS 1 in 0.59 seconds
+2020-10-20 04:14:29.991979 (Thread-1): On model.citibike.stations: COMMIT
+2020-10-20 04:14:29.992114 (Thread-1): Using snowflake connection "model.citibike.stations".
+2020-10-20 04:14:29.992169 (Thread-1): On model.citibike.stations: COMMIT
+2020-10-20 04:14:30.251064 (Thread-1): SQL status: SUCCESS 1 in 0.26 seconds
+2020-10-20 04:14:30.254712 (Thread-1): finished collecting timing info
+2020-10-20 04:14:30.254982 (Thread-1): On model.citibike.stations: Close
+2020-10-20 04:14:30.742159 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '59596c09-4fb0-4780-bc53-4425dfc4939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc67cd7b8>]}
+2020-10-20 04:14:30.743409 (Thread-1): 04:14:30 | 2 of 4 OK created view model dbt_aeldridge.stations.................. [SUCCESS 1 in 3.70s]
+2020-10-20 04:14:30.743518 (Thread-1): Finished running node model.citibike.stations
+2020-10-20 04:14:30.744288 (Thread-1): Began running node model.citibike.es
+2020-10-20 04:14:30.744615 (Thread-1): Acquiring new snowflake connection "model.citibike.es".
+2020-10-20 04:14:30.744713 (Thread-1): Compiling model.citibike.es
+2020-10-20 04:14:30.753579 (Thread-1): Writing injected SQL for node "model.citibike.es"
+2020-10-20 04:14:30.772981 (Thread-1): finished collecting timing info
+2020-10-20 04:14:30.773435 (Thread-1): Finished running node model.citibike.es
+2020-10-20 04:14:30.773555 (Thread-1): Began running node model.citibike.ss
+2020-10-20 04:14:30.773767 (Thread-1): Acquiring new snowflake connection "model.citibike.ss".
+2020-10-20 04:14:30.773844 (Thread-1): Compiling model.citibike.ss
+2020-10-20 04:14:30.781988 (Thread-1): Writing injected SQL for node "model.citibike.ss"
+2020-10-20 04:14:30.801481 (Thread-1): finished collecting timing info
+2020-10-20 04:14:30.801931 (Thread-1): Finished running node model.citibike.ss
+2020-10-20 04:14:30.802573 (Thread-1): Began running node model.citibike.trips_stations_vw
+2020-10-20 04:14:30.803566 (Thread-1): 04:14:30 | 3 of 4 START view model dbt_aeldridge.trips_stations_vw.............. [RUN]
+2020-10-20 04:14:30.803799 (Thread-1): Acquiring new snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:14:30.803874 (Thread-1): Compiling model.citibike.trips_stations_vw
+2020-10-20 04:14:30.817540 (Thread-1): Writing injected SQL for node "model.citibike.trips_stations_vw"
+2020-10-20 04:14:30.838316 (Thread-1): finished collecting timing info
+2020-10-20 04:14:30.842979 (Thread-1): Writing runtime SQL for node "model.citibike.trips_stations_vw"
+2020-10-20 04:14:30.871824 (Thread-1): Using snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:14:30.871904 (Thread-1): On model.citibike.trips_stations_vw: BEGIN
+2020-10-20 04:14:30.871964 (Thread-1): Opening a new connection, currently in state closed
+2020-10-20 04:14:31.409381 (Thread-65): handling poll request
+2020-10-20 04:14:31.409878 (Thread-65): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b28d828>]}
+2020-10-20 04:14:31.413984 (Thread-65): sending response (<Response 12470 bytes [200 OK]>) to 10.0.44.214
+2020-10-20 04:14:32.823877 (Thread-66): handling poll request
+2020-10-20 04:14:32.824418 (Thread-66): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10404b38>]}
+2020-10-20 04:14:32.825437 (Thread-66): sending response (<Response 286 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 04:14:33.930683 (Thread-1): SQL status: SUCCESS 1 in 3.06 seconds
+2020-10-20 04:14:33.930842 (Thread-1): Using snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:14:33.930899 (Thread-1): On model.citibike.trips_stations_vw: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.citibike.trips_stations_vw"} */
+
+  create or replace  view citibike.dbt_aeldridge.trips_stations_vw  as (
+    
+
+with __dbt__CTE__ss as (
+
+
+select station_id start_stn_id,
+    station_name start_station, region_name start_region,
+    borough_name start_borough, neighborhood_name start_neighborhood,
+    station_lat start_lat, station_lon start_lon, station_geo start_geo
+from citibike.dbt_aeldridge.stations
+),  __dbt__CTE__es as (
+
+
+select station_id end_stn_id,
+    station_name end_station, region_name end_region,
+    borough_name end_borough, neighborhood_name end_neighborhood,
+    station_lat end_lat, station_lon end_lon, station_geo end_geo
+from citibike.dbt_aeldridge.stations
+)--
+-- trip data enhanced with station location data
+--
+
+select *
+from citibike.demo.trips t
+     left outer join __dbt__CTE__ss ss  on t.start_station_id = ss.start_stn_id
+     left outer join __dbt__CTE__es es  on t.end_station_id = es.end_stn_id
+  );
+2020-10-20 04:14:34.281277 (Thread-67): handling poll request
+2020-10-20 04:14:34.281802 (Thread-67): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104049e8>]}
+2020-10-20 04:14:34.283108 (Thread-67): sending response (<Response 2362 bytes [200 OK]>) to 10.0.1.193
+2020-10-20 04:14:34.709493 (Thread-1): SQL status: SUCCESS 1 in 0.78 seconds
+2020-10-20 04:14:34.710598 (Thread-1): On model.citibike.trips_stations_vw: COMMIT
+2020-10-20 04:14:34.710730 (Thread-1): Using snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:14:34.710785 (Thread-1): On model.citibike.trips_stations_vw: COMMIT
+2020-10-20 04:14:34.972035 (Thread-1): SQL status: SUCCESS 1 in 0.26 seconds
+2020-10-20 04:14:34.978182 (Thread-1): finished collecting timing info
+2020-10-20 04:14:34.978590 (Thread-1): On model.citibike.trips_stations_vw: Close
+2020-10-20 04:14:35.468238 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '59596c09-4fb0-4780-bc53-4425dfc4939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc6769390>]}
+2020-10-20 04:14:35.470175 (Thread-1): 04:14:35 | 3 of 4 OK created view model dbt_aeldridge.trips_stations_vw......... [SUCCESS 1 in 4.66s]
+2020-10-20 04:14:35.470330 (Thread-1): Finished running node model.citibike.trips_stations_vw
+2020-10-20 04:14:35.471094 (Thread-1): Began running node model.citibike.trips_stations_weather_vw
+2020-10-20 04:14:35.472651 (Thread-1): 04:14:35 | 4 of 4 START view model dbt_aeldridge.trips_stations_weather_vw...... [RUN]
+2020-10-20 04:14:35.473055 (Thread-1): Acquiring new snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:14:35.473177 (Thread-1): Compiling model.citibike.trips_stations_weather_vw
+2020-10-20 04:14:35.491185 (Thread-1): Writing injected SQL for node "model.citibike.trips_stations_weather_vw"
+2020-10-20 04:14:35.510351 (Thread-1): finished collecting timing info
+2020-10-20 04:14:35.517269 (Thread-1): Writing runtime SQL for node "model.citibike.trips_stations_weather_vw"
+2020-10-20 04:14:35.537089 (Thread-1): Using snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:14:35.537207 (Thread-1): On model.citibike.trips_stations_weather_vw: BEGIN
+2020-10-20 04:14:35.537300 (Thread-1): Opening a new connection, currently in state closed
+2020-10-20 04:14:35.756345 (Thread-68): handling poll request
+2020-10-20 04:14:35.756855 (Thread-68): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104442b0>]}
+2020-10-20 04:14:35.759862 (Thread-68): sending response (<Response 8038 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 04:14:36.937996 (Thread-1): SQL status: SUCCESS 1 in 1.40 seconds
+2020-10-20 04:14:36.938154 (Thread-1): Using snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:14:36.938216 (Thread-1): On model.citibike.trips_stations_weather_vw: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "user", "target_name": "default", "node_id": "model.citibike.trips_stations_weather_vw"} */
+
+  create or replace  view citibike.dbt_aeldridge.trips_stations_weather_vw  as (
+    
+
+with __dbt__CTE__weather_vw as (
+
+
+--
+-- extracting/calculating the attributes from the weather JSON
+--
+
+select v:city.id::int                              city_id
+    ,date_trunc('hour', t)                         observation_time
+    ,utils.degKtoC(avg(v:main.temp::float))        temp_avg_c
+    ,utils.degKtoF(avg(v:main.temp::float))        temp_avg_f
+    ,truncate(avg(v:wind.deg::float))              wind_dir
+    ,truncate(avg(v:wind.speed::float), 1)         wind_speed_mph
+    ,truncate(avg(v:wind.speed::float) * 1.61, 1)  wind_speed_kph
+from citibike.demo.weather
+group by 1, 2
+)--
+-- connecting the trip and the weather data together
+--
+
+select *
+from citibike.dbt_aeldridge.trips_stations_vw 
+    left outer join __dbt__CTE__weather_vw on date_trunc('hour', starttime) = observation_time
+where city_id = 5128638
+  );
+2020-10-20 04:14:37.207001 (Thread-69): handling poll request
+2020-10-20 04:14:37.207507 (Thread-69): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b21c278>]}
+2020-10-20 04:14:37.208841 (Thread-69): sending response (<Response 2419 bytes [200 OK]>) to 10.0.38.178
+2020-10-20 04:14:38.625552 (Thread-70): handling poll request
+2020-10-20 04:14:38.626089 (Thread-70): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104ae978>]}
+2020-10-20 04:14:38.627484 (Thread-70): sending response (<Response 286 bytes [200 OK]>) to 10.0.20.192
+2020-10-20 04:14:38.653050 (Thread-1): SQL status: SUCCESS 1 in 1.71 seconds
+2020-10-20 04:14:38.654154 (Thread-1): On model.citibike.trips_stations_weather_vw: COMMIT
+2020-10-20 04:14:38.654289 (Thread-1): Using snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:14:38.654344 (Thread-1): On model.citibike.trips_stations_weather_vw: COMMIT
+2020-10-20 04:14:38.920038 (Thread-1): SQL status: SUCCESS 1 in 0.27 seconds
+2020-10-20 04:14:38.923704 (Thread-1): finished collecting timing info
+2020-10-20 04:14:38.923976 (Thread-1): On model.citibike.trips_stations_weather_vw: Close
+2020-10-20 04:14:39.404171 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '59596c09-4fb0-4780-bc53-4425dfc4939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc67c42e8>]}
+2020-10-20 04:14:39.405497 (Thread-1): 04:14:39 | 4 of 4 OK created view model dbt_aeldridge.trips_stations_weather_vw. [SUCCESS 1 in 3.93s]
+2020-10-20 04:14:39.405615 (Thread-1): Finished running node model.citibike.trips_stations_weather_vw
+2020-10-20 04:14:39.408384 (MainThread): Acquiring new snowflake connection "master".
+2020-10-20 04:14:39.408546 (MainThread): Using snowflake connection "master".
+2020-10-20 04:14:39.408601 (MainThread): On master: BEGIN
+2020-10-20 04:14:39.408656 (MainThread): Opening a new connection, currently in state closed
+2020-10-20 04:14:40.053527 (Thread-71): handling poll request
+2020-10-20 04:14:40.054095 (Thread-71): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104446d8>]}
+2020-10-20 04:14:40.056854 (Thread-71): sending response (<Response 5187 bytes [200 OK]>) to 10.0.44.214
+2020-10-20 04:14:41.026499 (MainThread): SQL status: SUCCESS 1 in 1.62 seconds
+2020-10-20 04:14:41.026663 (MainThread): On master: COMMIT
+2020-10-20 04:14:41.026762 (MainThread): Using snowflake connection "master".
+2020-10-20 04:14:41.026814 (MainThread): On master: COMMIT
+2020-10-20 04:14:41.372594 (MainThread): SQL status: SUCCESS 1 in 0.35 seconds
+2020-10-20 04:14:41.372766 (MainThread): On master: Close
+2020-10-20 04:14:41.457312 (Thread-72): handling poll request
+2020-10-20 04:14:41.457796 (Thread-72): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10516be0>]}
+2020-10-20 04:14:41.459411 (Thread-72): sending response (<Response 1850 bytes [200 OK]>) to 10.0.24.16
+2020-10-20 04:14:41.843673 (MainThread): 04:14:41 | 
+2020-10-20 04:14:41.843808 (MainThread): 04:14:41 | Finished running 1 table model, 3 view models in 37.92s.
+2020-10-20 04:14:41.843880 (MainThread): Connection 'master' was properly closed.
+2020-10-20 04:14:41.843929 (MainThread): Connection 'model.citibike.trips_stations_weather_vw' was properly closed.
+2020-10-20 04:14:41.893926 (MainThread): 
+2020-10-20 04:14:41.894067 (MainThread): Completed successfully
+2020-10-20 04:14:41.894139 (MainThread): 
+Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+2020-10-20 04:14:42.878324 (Thread-73): handling poll request
+2020-10-20 04:14:42.878828 (Thread-73): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10398400>]}
+2020-10-20 04:14:42.892990 (Thread-73): sending response (<Response 21939 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 04:14:43.330820 (Thread-74): handling status request
+2020-10-20 04:14:43.331312 (Thread-74): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b103a6ba8>]}
+2020-10-20 04:14:43.335951 (Thread-74): sending response (<Response 11385 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 04:22:33.907754 (Thread-75): handling status request
+2020-10-20 04:22:33.909511 (Thread-75): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b104b3cc0>]}
+2020-10-20 04:22:33.914223 (Thread-75): sending response (<Response 11385 bytes [200 OK]>) to 10.0.1.86

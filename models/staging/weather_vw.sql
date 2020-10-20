@@ -11,5 +11,5 @@ select v:city.id::int                              city_id
     ,truncate(avg(v:wind.deg::float))              wind_dir
     ,truncate(avg(v:wind.speed::float), 1)         wind_speed_mph
     ,truncate(avg(v:wind.speed::float) * 1.61, 1)  wind_speed_kph
-from {{ source('demo', 'weather') }}
+from {{ ref('weather') }}
 group by 1, 2

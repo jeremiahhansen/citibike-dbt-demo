@@ -1,7 +1,0 @@
-version: 2
-
-sources:
-  - name: demo
-    tables:
-      - name: trips
-      - name: weather

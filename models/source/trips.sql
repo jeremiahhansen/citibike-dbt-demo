@@ -1,3 +1,5 @@
+{{ config(materialized='view') }}
+
 --
 -- populate the trips table from the reset DB
 --

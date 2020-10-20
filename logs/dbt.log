@@ -2343,3 +2343,72 @@ Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
 2020-10-20 04:37:41.641485 (Thread-132): handling status request
 2020-10-20 04:37:41.643440 (Thread-132): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b1a5240>]}
 2020-10-20 04:37:41.648646 (Thread-132): sending response (<Response 13284 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 04:37:49.581622 (MainThread): writing 1 spans (enabled:True)
+2020-10-20 04:37:49.581832 (MainThread): 
+      name jinja2.compile
+        id 15938428746584147945
+  trace_id 7682619529811075942
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1603168669.580769
+       end 1603168669.5814672
+  duration 0.000698s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:76f7a1a50f7440e48c3c599e8ff5d332
+2020-10-20 04:37:49.635393 (Thread-133): Parsing macros/adapters.sql
+2020-10-20 04:37:49.665724 (Thread-133): Parsing macros/catalog.sql
+2020-10-20 04:37:49.667791 (Thread-133): Parsing macros/materializations/table.sql
+2020-10-20 04:37:49.671887 (Thread-133): Parsing macros/materializations/merge.sql
+2020-10-20 04:37:49.674068 (Thread-133): Parsing macros/materializations/view.sql
+2020-10-20 04:37:49.675639 (Thread-133): Parsing macros/materializations/incremental.sql
+2020-10-20 04:37:49.686112 (Thread-133): Parsing macros/core.sql
+2020-10-20 04:37:49.691372 (Thread-133): Parsing macros/adapters/common.sql
+2020-10-20 04:37:49.750173 (Thread-133): Parsing macros/materializations/helpers.sql
+2020-10-20 04:37:49.761565 (Thread-133): Parsing macros/materializations/table/table.sql
+2020-10-20 04:37:49.768603 (Thread-133): Parsing macros/materializations/seed/seed.sql
+2020-10-20 04:37:49.790779 (Thread-133): Parsing macros/materializations/view/view.sql
+2020-10-20 04:37:49.797467 (Thread-133): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-10-20 04:37:49.802660 (Thread-133): Parsing macros/materializations/incremental/helpers.sql
+2020-10-20 04:37:49.804622 (Thread-133): Parsing macros/materializations/incremental/incremental.sql
+2020-10-20 04:37:49.810990 (Thread-133): Parsing macros/materializations/common/merge.sql
+2020-10-20 04:37:49.825465 (Thread-133): Parsing macros/materializations/snapshot/strategies.sql
+2020-10-20 04:37:49.842768 (Thread-133): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-10-20 04:37:49.844611 (Thread-133): Parsing macros/materializations/snapshot/snapshot.sql
+2020-10-20 04:37:49.875286 (Thread-133): Parsing macros/schema_tests/relationships.sql
+2020-10-20 04:37:49.877360 (Thread-133): Parsing macros/schema_tests/not_null.sql
+2020-10-20 04:37:49.879017 (Thread-133): Parsing macros/schema_tests/unique.sql
+2020-10-20 04:37:49.880884 (Thread-133): Parsing macros/schema_tests/accepted_values.sql
+2020-10-20 04:37:49.883751 (Thread-133): Parsing macros/etc/get_custom_database.sql
+2020-10-20 04:37:49.885540 (Thread-133): Parsing macros/etc/query.sql
+2020-10-20 04:37:49.886684 (Thread-133): Parsing macros/etc/datetime.sql
+2020-10-20 04:37:49.896005 (Thread-133): Parsing macros/etc/get_custom_alias.sql
+2020-10-20 04:37:49.897042 (Thread-133): Parsing macros/etc/is_incremental.sql
+2020-10-20 04:37:49.898755 (Thread-133): Parsing macros/etc/get_custom_schema.sql
+2020-10-20 04:37:49.948658 (Thread-133): Acquiring new snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:37:49.969997 (Thread-133): Acquiring new snowflake connection "model.citibike.stations".
+2020-10-20 04:37:49.991185 (Thread-133): Acquiring new snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:37:50.012659 (Thread-133): Acquiring new snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:37:50.038473 (Thread-133): Acquiring new snowflake connection "model.citibike.station_nhood_json".
+2020-10-20 04:37:50.061986 (Thread-133): Acquiring new snowflake connection "model.citibike.ss".
+2020-10-20 04:37:50.079613 (Thread-133): Acquiring new snowflake connection "model.citibike.weather_vw".
+2020-10-20 04:37:50.097123 (Thread-133): Acquiring new snowflake connection "model.citibike.es".
+2020-10-20 04:37:50.123188 (Thread-133): Acquiring new snowflake connection "model.citibike.station_json".
+2020-10-20 04:37:50.165672 (Thread-134): handling status request
+2020-10-20 04:37:50.170595 (Thread-133): Acquiring new snowflake connection "model.citibike.region_json".
+2020-10-20 04:37:50.171098 (Thread-134): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ace9390>]}
+2020-10-20 04:37:50.183312 (Thread-134): sending response (<Response 184 bytes [200 OK]>) to 10.0.33.145
+2020-10-20 04:37:50.190446 (Thread-133): Acquiring new snowflake connection "model.citibike.nhood_json".
+2020-10-20 04:37:50.209742 (Thread-133): Acquiring new snowflake connection "operation.citibike.citibike-on-run-start-0".
+2020-10-20 04:37:50.220187 (Thread-133): Acquiring new snowflake connection "operation.citibike.citibike-on-run-start-1".
+2020-10-20 04:37:50.419598 (AgentWriter): reported 55 traces in 0.15002s
+2020-10-20 04:37:50.422160 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-10-20 04:37:51.621542 (Thread-135): handling status request
+2020-10-20 04:37:51.622310 (Thread-135): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ae326d8>]}
+2020-10-20 04:37:51.628220 (Thread-135): sending response (<Response 12053 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 04:43:45.551570 (Thread-136): handling status request
+2020-10-20 04:43:45.553397 (Thread-136): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ae13da0>]}
+2020-10-20 04:43:45.558338 (Thread-136): sending response (<Response 12053 bytes [200 OK]>) to 10.0.44.214

@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 --- 
 --- get the source data from the GBFS web feeds
 ---

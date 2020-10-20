@@ -4870,3 +4870,277 @@ where v:city.country::string='US'
 2020-10-20 05:17:05.383705 (Thread-440): handling poll request
 2020-10-20 05:17:05.384247 (Thread-440): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ae60860>]}
 2020-10-20 05:17:05.385387 (Thread-440): sending response (<Response 287 bytes [200 OK]>) to 10.0.1.193
+2020-10-20 05:17:06.823118 (Thread-441): handling poll request
+2020-10-20 05:17:06.823645 (Thread-441): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b150908>]}
+2020-10-20 05:17:06.824663 (Thread-441): sending response (<Response 287 bytes [200 OK]>) to 10.0.33.145
+2020-10-20 05:17:08.465793 (Thread-442): handling poll request
+2020-10-20 05:17:08.466295 (Thread-442): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b28bc88>]}
+2020-10-20 05:17:08.467305 (Thread-442): sending response (<Response 287 bytes [200 OK]>) to 10.0.38.178
+2020-10-20 05:17:09.938787 (Thread-443): handling poll request
+2020-10-20 05:17:09.939324 (Thread-443): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b2f2a20>]}
+2020-10-20 05:17:09.940321 (Thread-443): sending response (<Response 287 bytes [200 OK]>) to 10.0.38.178
+2020-10-20 05:17:11.380299 (Thread-444): handling poll request
+2020-10-20 05:17:11.380850 (Thread-444): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b2f2a20>]}
+2020-10-20 05:17:11.381860 (Thread-444): sending response (<Response 287 bytes [200 OK]>) to 10.0.38.178
+2020-10-20 05:17:11.722493 (MainThread): writing 1 spans (enabled:True), 1 additional messages skipped
+2020-10-20 05:17:11.722699 (MainThread): 
+      name jinja2.compile
+        id 5028851479970650794
+  trace_id 14882642692471271883
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1603171031.721656
+       end 1603171031.7223392
+  duration 0.000683s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:76f7a1a50f7440e48c3c599e8ff5d332, 1 additional messages skipped
+2020-10-20 05:17:11.776873 (Thread-445): Parsing macros/adapters.sql
+2020-10-20 05:17:11.807680 (Thread-445): Parsing macros/catalog.sql
+2020-10-20 05:17:11.809762 (Thread-445): Parsing macros/materializations/table.sql
+2020-10-20 05:17:11.813990 (Thread-445): Parsing macros/materializations/merge.sql
+2020-10-20 05:17:11.816171 (Thread-445): Parsing macros/materializations/view.sql
+2020-10-20 05:17:11.817709 (Thread-445): Parsing macros/materializations/incremental.sql
+2020-10-20 05:17:11.828663 (Thread-445): Parsing macros/core.sql
+2020-10-20 05:17:11.832671 (Thread-445): Parsing macros/adapters/common.sql
+2020-10-20 05:17:11.878473 (Thread-445): Parsing macros/materializations/helpers.sql
+2020-10-20 05:17:11.888022 (Thread-445): Parsing macros/materializations/table/table.sql
+2020-10-20 05:17:11.895049 (Thread-445): Parsing macros/materializations/seed/seed.sql
+2020-10-20 05:17:11.916980 (Thread-445): Parsing macros/materializations/view/view.sql
+2020-10-20 05:17:11.923471 (Thread-445): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-10-20 05:17:11.928650 (Thread-445): Parsing macros/materializations/incremental/helpers.sql
+2020-10-20 05:17:11.930612 (Thread-445): Parsing macros/materializations/incremental/incremental.sql
+2020-10-20 05:17:11.936942 (Thread-445): Parsing macros/materializations/common/merge.sql
+2020-10-20 05:17:11.951484 (Thread-445): Parsing macros/materializations/snapshot/strategies.sql
+2020-10-20 05:17:11.969287 (Thread-445): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-10-20 05:17:11.971396 (Thread-445): Parsing macros/materializations/snapshot/snapshot.sql
+2020-10-20 05:17:12.002039 (Thread-445): Parsing macros/schema_tests/relationships.sql
+2020-10-20 05:17:12.004302 (Thread-445): Parsing macros/schema_tests/not_null.sql
+2020-10-20 05:17:12.006008 (Thread-445): Parsing macros/schema_tests/unique.sql
+2020-10-20 05:17:12.007899 (Thread-445): Parsing macros/schema_tests/accepted_values.sql
+2020-10-20 05:17:12.010795 (Thread-445): Parsing macros/etc/get_custom_database.sql
+2020-10-20 05:17:12.012610 (Thread-445): Parsing macros/etc/query.sql
+2020-10-20 05:17:12.013772 (Thread-445): Parsing macros/etc/datetime.sql
+2020-10-20 05:17:12.023154 (Thread-445): Parsing macros/etc/get_custom_alias.sql
+2020-10-20 05:17:12.024197 (Thread-445): Parsing macros/etc/is_incremental.sql
+2020-10-20 05:17:12.025912 (Thread-445): Parsing macros/etc/get_custom_schema.sql
+2020-10-20 05:17:12.076719 (Thread-445): Acquiring new snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 05:17:12.101200 (Thread-445): Acquiring new snowflake connection "model.citibike.stations".
+2020-10-20 05:17:12.125382 (Thread-445): Acquiring new snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 05:17:12.149925 (Thread-445): Acquiring new snowflake connection "model.citibike.trips".
+2020-10-20 05:17:12.164297 (Thread-445): Acquiring new snowflake connection "model.citibike.weather".
+2020-10-20 05:17:12.181130 (Thread-445): Acquiring new snowflake connection "model.citibike.gbfs_json".
+2020-10-20 05:17:12.197408 (Thread-445): Acquiring new snowflake connection "model.citibike.station_nhood_json".
+2020-10-20 05:17:12.216216 (Thread-445): Acquiring new snowflake connection "model.citibike.ss".
+2020-10-20 05:17:12.234192 (Thread-445): Acquiring new snowflake connection "model.citibike.weather_vw".
+2020-10-20 05:17:12.251772 (Thread-445): Acquiring new snowflake connection "model.citibike.es".
+2020-10-20 05:17:12.269340 (Thread-445): Acquiring new snowflake connection "model.citibike.station_json".
+2020-10-20 05:17:12.288190 (Thread-445): Acquiring new snowflake connection "model.citibike.region_json".
+2020-10-20 05:17:12.306461 (Thread-445): Acquiring new snowflake connection "model.citibike.nhood_json".
+2020-10-20 05:17:12.464543 (Thread-446): handling status request
+2020-10-20 05:17:12.480297 (Thread-446): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad2e128>]}
+2020-10-20 05:17:12.486131 (Thread-446): sending response (<Response 12011 bytes [200 OK]>) to 10.0.22.169
+2020-10-20 05:17:12.795564 (Thread-447): handling poll request
+2020-10-20 05:17:12.796079 (Thread-447): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b103e4be0>]}
+2020-10-20 05:17:12.797079 (Thread-447): sending response (<Response 287 bytes [200 OK]>) to 10.0.29.170
+2020-10-20 05:17:14.230271 (Thread-448): handling poll request
+2020-10-20 05:17:14.230838 (Thread-448): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9a5c0>]}
+2020-10-20 05:17:14.231874 (Thread-448): sending response (<Response 287 bytes [200 OK]>) to 10.0.46.73
+2020-10-20 05:17:15.643065 (Thread-449): handling poll request
+2020-10-20 05:17:15.643630 (Thread-449): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9a6a0>]}
+2020-10-20 05:17:15.644607 (Thread-449): sending response (<Response 286 bytes [200 OK]>) to 10.0.1.86
+2020-10-20 05:17:17.054834 (Thread-450): handling poll request
+2020-10-20 05:17:17.055401 (Thread-450): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9aac8>]}
+2020-10-20 05:17:17.056422 (Thread-450): sending response (<Response 287 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 05:17:18.584147 (Thread-451): handling poll request
+2020-10-20 05:17:18.584749 (Thread-451): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9d9b0>]}
+2020-10-20 05:17:18.585983 (Thread-451): sending response (<Response 287 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 05:17:20.010948 (Thread-452): handling poll request
+2020-10-20 05:17:20.011551 (Thread-452): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9de80>]}
+2020-10-20 05:17:20.012554 (Thread-452): sending response (<Response 287 bytes [200 OK]>) to 10.0.44.214
+2020-10-20 05:17:21.485675 (Thread-453): handling poll request
+2020-10-20 05:17:21.486163 (Thread-453): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9d898>]}
+2020-10-20 05:17:21.487453 (Thread-453): sending response (<Response 287 bytes [200 OK]>) to 10.0.33.145
+2020-10-20 05:17:22.895256 (Thread-454): handling poll request
+2020-10-20 05:17:22.895857 (Thread-454): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9a080>]}
+2020-10-20 05:17:22.897058 (Thread-454): sending response (<Response 287 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 05:17:24.325453 (Thread-455): handling poll request
+2020-10-20 05:17:24.325948 (Thread-455): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9a9e8>]}
+2020-10-20 05:17:24.326934 (Thread-455): sending response (<Response 287 bytes [200 OK]>) to 10.0.1.86
+2020-10-20 05:17:25.737676 (Thread-456): handling poll request
+2020-10-20 05:17:25.738283 (Thread-456): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9add8>]}
+2020-10-20 05:17:25.739548 (Thread-456): sending response (<Response 286 bytes [200 OK]>) to 10.0.1.193
+2020-10-20 05:17:27.273490 (Thread-457): handling poll request
+2020-10-20 05:17:27.273981 (Thread-457): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9add8>]}
+2020-10-20 05:17:27.274955 (Thread-457): sending response (<Response 286 bytes [200 OK]>) to 10.0.47.166
+2020-10-20 05:17:28.703527 (Thread-458): handling poll request
+2020-10-20 05:17:28.704028 (Thread-458): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abe4128>]}
+2020-10-20 05:17:28.705008 (Thread-458): sending response (<Response 287 bytes [200 OK]>) to 10.0.47.166
+2020-10-20 05:17:30.117607 (Thread-459): handling poll request
+2020-10-20 05:17:30.118136 (Thread-459): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abe4b38>]}
+2020-10-20 05:17:30.119135 (Thread-459): sending response (<Response 287 bytes [200 OK]>) to 10.0.1.86
+2020-10-20 05:17:31.573438 (Thread-460): handling poll request
+2020-10-20 05:17:31.573947 (Thread-460): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abe49b0>]}
+2020-10-20 05:17:31.574932 (Thread-460): sending response (<Response 287 bytes [200 OK]>) to 10.0.44.214
+2020-10-20 05:17:32.999418 (Thread-461): handling poll request
+2020-10-20 05:17:32.999924 (Thread-461): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9d908>]}
+2020-10-20 05:17:33.000937 (Thread-461): sending response (<Response 287 bytes [200 OK]>) to 10.0.1.86
+2020-10-20 05:17:34.442655 (Thread-462): handling poll request
+2020-10-20 05:17:34.443142 (Thread-462): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9d4a8>]}
+2020-10-20 05:17:34.444174 (Thread-462): sending response (<Response 286 bytes [200 OK]>) to 10.0.22.169
+2020-10-20 05:17:35.843036 (Thread-463): handling poll request
+2020-10-20 05:17:35.843563 (Thread-463): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9d128>]}
+2020-10-20 05:17:35.844578 (Thread-463): sending response (<Response 287 bytes [200 OK]>) to 10.0.29.170
+2020-10-20 05:17:37.255572 (Thread-464): handling poll request
+2020-10-20 05:17:37.256066 (Thread-464): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0a30e978>]}
+2020-10-20 05:17:37.257092 (Thread-464): sending response (<Response 287 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 05:17:38.688146 (Thread-465): handling poll request
+2020-10-20 05:17:38.688646 (Thread-465): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0a30ef98>]}
+2020-10-20 05:17:38.689627 (Thread-465): sending response (<Response 287 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 05:17:40.096138 (Thread-466): handling poll request
+2020-10-20 05:17:40.096646 (Thread-466): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0a30e9b0>]}
+2020-10-20 05:17:40.098180 (Thread-466): Checking header 'user-agent' tracing in whitelist set(), 49 additional messages skipped
+2020-10-20 05:17:40.229497 (Thread-466): sending response (<Response 287 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 05:17:41.683503 (Thread-467): handling poll request
+2020-10-20 05:17:41.684001 (Thread-467): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0a2d1198>]}
+2020-10-20 05:17:41.684987 (Thread-467): sending response (<Response 287 bytes [200 OK]>) to 10.0.33.145
+2020-10-20 05:17:43.109744 (Thread-468): handling poll request
+2020-10-20 05:17:43.110247 (Thread-468): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abe45f8>]}
+2020-10-20 05:17:43.111274 (Thread-468): sending response (<Response 287 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 05:17:44.547842 (Thread-469): handling poll request
+2020-10-20 05:17:44.548353 (Thread-469): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abe4470>]}
+2020-10-20 05:17:44.549381 (Thread-469): sending response (<Response 287 bytes [200 OK]>) to 10.0.29.170
+2020-10-20 05:17:45.977786 (Thread-470): handling poll request
+2020-10-20 05:17:45.978287 (Thread-470): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abe4588>]}
+2020-10-20 05:17:45.979352 (Thread-470): sending response (<Response 287 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 05:17:47.416030 (Thread-471): handling poll request
+2020-10-20 05:17:47.416547 (Thread-471): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abe4278>]}
+2020-10-20 05:17:47.417561 (Thread-471): sending response (<Response 287 bytes [200 OK]>) to 10.0.7.71
+2020-10-20 05:17:48.832326 (Thread-472): handling poll request
+2020-10-20 05:17:48.832880 (Thread-472): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9df60>]}
+2020-10-20 05:17:48.833873 (Thread-472): sending response (<Response 287 bytes [200 OK]>) to 10.0.1.193
+2020-10-20 05:17:50.263885 (Thread-473): handling poll request
+2020-10-20 05:17:50.264381 (Thread-473): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9df98>]}
+2020-10-20 05:17:50.265384 (Thread-473): sending response (<Response 287 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 05:17:51.708423 (Thread-474): handling poll request
+2020-10-20 05:17:51.708932 (Thread-474): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9dfd0>]}
+2020-10-20 05:17:51.709987 (Thread-474): sending response (<Response 287 bytes [200 OK]>) to 10.0.47.166
+2020-10-20 05:17:53.210502 (Thread-475): handling poll request
+2020-10-20 05:17:53.210999 (Thread-475): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9d9b0>]}
+2020-10-20 05:17:53.212035 (Thread-475): sending response (<Response 287 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 05:17:54.619808 (Thread-476): handling poll request
+2020-10-20 05:17:54.620333 (Thread-476): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9a0b8>]}
+2020-10-20 05:17:54.621431 (Thread-476): sending response (<Response 287 bytes [200 OK]>) to 10.0.1.193
+2020-10-20 05:17:56.058866 (Thread-477): handling poll request
+2020-10-20 05:17:56.059387 (Thread-477): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9a1d0>]}
+2020-10-20 05:17:56.060379 (Thread-477): sending response (<Response 287 bytes [200 OK]>) to 10.0.5.27
+2020-10-20 05:17:57.469475 (Thread-478): handling poll request
+2020-10-20 05:17:57.470042 (Thread-478): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ad9aa20>]}
+2020-10-20 05:17:57.471053 (Thread-478): sending response (<Response 287 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 05:17:58.911948 (Thread-479): handling poll request
+2020-10-20 05:17:58.912457 (Thread-479): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abd8b70>]}
+2020-10-20 05:17:58.913448 (Thread-479): sending response (<Response 286 bytes [200 OK]>) to 10.0.21.85
+2020-10-20 05:18:00.347062 (Thread-480): handling poll request
+2020-10-20 05:18:00.347595 (Thread-480): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abd8208>]}
+2020-10-20 05:18:00.348932 (Thread-480): sending response (<Response 285 bytes [200 OK]>) to 10.0.47.166
+2020-10-20 05:18:01.629789 (MainThread): writing 1 spans (enabled:True), 50 additional messages skipped
+2020-10-20 05:18:01.630111 (MainThread): 
+      name jinja2.compile
+        id 2321137351506952593
+  trace_id 4703397522364134840
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1603171081.6288168
+       end 1603171081.629562
+  duration 0.000745s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:76f7a1a50f7440e48c3c599e8ff5d332, 50 additional messages skipped
+2020-10-20 05:18:01.653201 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b2c2afa58>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b10efafd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0b1bf438>]}
+2020-10-20 05:18:01.653519 (MainThread): Flushing usage events
+2020-10-20 05:18:01.654881 (MainThread): Checking header 'user-agent' tracing in whitelist set(), 24 additional messages skipped
+2020-10-20 05:18:01.784882 (MainThread): Connection 'model.citibike.nhood_json' was properly closed.
+2020-10-20 05:18:01.785616 (MainThread): Runtime Error
+  at path []: ['target'] is not of type 'string'
+
+Error encountered in /usr/src/develop/user-10267/environment-12627/repository-10327/dbt_project.yml
+jsonschema.exceptions.ValidationError: ['target'] is not of type 'string'
+
+Failed validating 'type' in schema[0]:
+    {'type': 'string'}
+
+On instance:
+    ['target']
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/project.py", line 423, in from_project_config
+    cfg = parse_project_config(project_dict)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/contracts/project.py", line 250, in parse_project_config
+    return ProjectV2.from_dict(data, validate=validate)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/contracts/project.py", line 234, in from_dict
+    result = super().from_dict(data, validate=validate)
+  File "/usr/local/lib/python3.6/dist-packages/hologram/__init__.py", line 618, in from_dict
+    cls.validate(data)
+  File "/usr/local/lib/python3.6/dist-packages/hologram/__init__.py", line 961, in validate
+    raise ValidationError.create_from(error) from error
+hologram.ValidationError: ['target'] is not of type 'string'
+
+Failed validating 'type' in schema[0]:
+    {'type': 'string'}
+
+On instance:
+    ['target']
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/app/sinter/clients/dbt.py", line 759, in call
+    command + extra_args
+  File "/usr/local/lib/python3.6/dist-packages/dbt/main.py", line 202, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/main.py", line 255, in run_from_args
+    results = task.run()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/server.py", line 147, in run
+    self.run_forever()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/server.py", line 142, in run_forever
+    threaded=not self.task_manager.single_threaded(),
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 1012, in run_simple
+    inner()
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 969, in inner
+    srv.serve_forever()
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 737, in serve_forever
+    HTTPServer.serve_forever(self)
+  File "/usr/lib/python3.6/socketserver.py", line 236, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/usr/lib/python3.6/selectors.py", line 376, in select
+    fd_event_list = self._poll.poll(timeout)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/server.py", line 102, in _sighup_handler
+    self.task_manager.reload_config()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/task_manager.py", line 128, in reload_config
+    config = self.config.from_args(self.args)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/runtime.py", line 230, in from_args
+    project, profile = cls.collect_parts(args)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/runtime.py", line 216, in collect_parts
+    project = partial.render(project_renderer)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/project.py", line 233, in render
+    verify_version=self.verify_version,
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/project.py", line 665, in render_from_dict
+    dbt_version,
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/project.py", line 425, in from_project_config
+    raise DbtProjectError(validator_error_message(e)) from e
+dbt.exceptions.DbtProjectError: Runtime Error
+  at path []: ['target'] is not of type 'string'
+
+Error encountered in /usr/src/develop/user-10267/environment-12627/repository-10327/dbt_project.yml
+2020-10-20 05:18:01.787838 (MainThread): Runtime Error
+  at path []: ['target'] is not of type 'string'
+
+Error encountered in /usr/src/develop/user-10267/environment-12627/repository-10327/dbt_project.yml

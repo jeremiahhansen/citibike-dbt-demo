@@ -1,8 +1,5 @@
 
 
-      create or replace transient table citibike.dbt_aeldridge.stations  as
-      (
-
 --- 
 --- materialise the station records augmented with neighborhood data
 ---
@@ -86,5 +83,3 @@ select station_v:station_id::number station_id,
     borough_name, neighborhood_name
 from s left outer join r
     on station_v:region_id::integer = region_v:region_id::integer
-      );
-    

@@ -21,3 +21,7 @@ models:
     citibike:
         +database: citibike
         +materialized: table
+
+on-run-start:
+    - "drop schema citibike.dbt_aeldridge"
+    - "create schema if not exists {{ target.schema }}"

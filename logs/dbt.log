@@ -2546,3 +2546,53 @@ Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
 2020-10-20 04:48:33.410505 (Thread-142): handling status request
 2020-10-20 04:48:33.411072 (Thread-142): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0abf4a58>]}
 2020-10-20 04:48:33.415845 (Thread-142): sending response (<Response 12403 bytes [200 OK]>) to 10.0.8.193
+2020-10-20 04:48:38.923059 (MainThread): Connection 'model.citibike.nhood_json' was properly closed.
+2020-10-20 04:48:38.953747 (Thread-143): Parsing macros/adapters.sql
+2020-10-20 04:48:38.983715 (Thread-143): Parsing macros/catalog.sql
+2020-10-20 04:48:38.985823 (Thread-143): Parsing macros/materializations/table.sql
+2020-10-20 04:48:38.989900 (Thread-143): Parsing macros/materializations/merge.sql
+2020-10-20 04:48:38.991984 (Thread-143): Parsing macros/materializations/view.sql
+2020-10-20 04:48:38.993554 (Thread-143): Parsing macros/materializations/incremental.sql
+2020-10-20 04:48:39.005550 (Thread-143): Parsing macros/core.sql
+2020-10-20 04:48:39.009439 (Thread-143): Parsing macros/adapters/common.sql
+2020-10-20 04:48:39.053779 (Thread-143): Parsing macros/materializations/helpers.sql
+2020-10-20 04:48:39.063089 (Thread-143): Parsing macros/materializations/table/table.sql
+2020-10-20 04:48:39.070171 (Thread-143): Parsing macros/materializations/seed/seed.sql
+2020-10-20 04:48:39.091688 (Thread-143): Parsing macros/materializations/view/view.sql
+2020-10-20 04:48:39.098149 (Thread-143): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-10-20 04:48:39.103313 (Thread-143): Parsing macros/materializations/incremental/helpers.sql
+2020-10-20 04:48:39.105284 (Thread-143): Parsing macros/materializations/incremental/incremental.sql
+2020-10-20 04:48:39.111610 (Thread-143): Parsing macros/materializations/common/merge.sql
+2020-10-20 04:48:39.126075 (Thread-143): Parsing macros/materializations/snapshot/strategies.sql
+2020-10-20 04:48:39.143357 (Thread-143): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-10-20 04:48:39.145215 (Thread-143): Parsing macros/materializations/snapshot/snapshot.sql
+2020-10-20 04:48:39.174540 (Thread-143): Parsing macros/schema_tests/relationships.sql
+2020-10-20 04:48:39.176547 (Thread-143): Parsing macros/schema_tests/not_null.sql
+2020-10-20 04:48:39.178184 (Thread-143): Parsing macros/schema_tests/unique.sql
+2020-10-20 04:48:39.180001 (Thread-143): Parsing macros/schema_tests/accepted_values.sql
+2020-10-20 04:48:39.182845 (Thread-143): Parsing macros/etc/get_custom_database.sql
+2020-10-20 04:48:39.184591 (Thread-143): Parsing macros/etc/query.sql
+2020-10-20 04:48:39.185731 (Thread-143): Parsing macros/etc/datetime.sql
+2020-10-20 04:48:39.194987 (Thread-143): Parsing macros/etc/get_custom_alias.sql
+2020-10-20 04:48:39.195996 (Thread-143): Parsing macros/etc/is_incremental.sql
+2020-10-20 04:48:39.197712 (Thread-143): Parsing macros/etc/get_custom_schema.sql
+2020-10-20 04:48:39.246048 (Thread-143): Acquiring new snowflake connection "model.citibike.trips_stations_vw".
+2020-10-20 04:48:39.266019 (Thread-143): Acquiring new snowflake connection "model.citibike.stations".
+2020-10-20 04:48:39.286576 (Thread-143): Acquiring new snowflake connection "model.citibike.trips_stations_weather_vw".
+2020-10-20 04:48:39.305850 (Thread-143): Acquiring new snowflake connection "model.citibike.gbfs_json".
+2020-10-20 04:48:39.323880 (Thread-143): Acquiring new snowflake connection "model.citibike.station_nhood_json".
+2020-10-20 04:48:39.342346 (Thread-143): Acquiring new snowflake connection "model.citibike.ss".
+2020-10-20 04:48:39.365118 (Thread-143): Acquiring new snowflake connection "model.citibike.weather_vw".
+2020-10-20 04:48:39.375906 (Thread-144): handling status request
+2020-10-20 04:48:39.376315 (Thread-144): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0af27128>]}
+2020-10-20 04:48:39.377032 (Thread-144): sending response (<Response 184 bytes [200 OK]>) to 10.0.38.178
+2020-10-20 04:48:39.384194 (Thread-143): Acquiring new snowflake connection "model.citibike.es".
+2020-10-20 04:48:39.402110 (Thread-143): Acquiring new snowflake connection "model.citibike.station_json".
+2020-10-20 04:48:39.420499 (Thread-143): Acquiring new snowflake connection "model.citibike.region_json".
+2020-10-20 04:48:39.439081 (Thread-143): Acquiring new snowflake connection "model.citibike.nhood_json".
+2020-10-20 04:48:41.021422 (Thread-145): handling status request
+2020-10-20 04:48:41.021960 (Thread-145): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0aed3240>]}
+2020-10-20 04:48:41.026619 (Thread-145): sending response (<Response 11425 bytes [200 OK]>) to 10.0.1.193
+2020-10-20 05:07:35.651204 (Thread-146): handling status request
+2020-10-20 05:07:35.653187 (Thread-146): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '618c02c7-e167-4960-b729-ed17fb153774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0aed5f98>]}
+2020-10-20 05:07:35.657830 (Thread-146): sending response (<Response 11425 bytes [200 OK]>) to 10.0.20.192
